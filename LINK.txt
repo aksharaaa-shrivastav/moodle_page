@@ -1,2 +1,2 @@
 GitHub repository link -https://github.com/aksharaaa-shrivastav/moodle_page.git
-Live GitHub pages URL -
+Live GitHub pages URL - https://aksharaaa-shrivastav.github.io/moodle_page/
