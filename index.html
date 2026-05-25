@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moodle Course Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">MoodleClone</div>
+      <div>
+        <h1>Fundamentals of Web Development</h1>
+        <p class="subtitle">Delhi Institute of Technology &nbsp;|&nbsp; Student: Rahul Sharma</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="nav-list">
+      <li><a href="#" class="nav-link active" onclick="setActive(this)">Home</a></li>
+      <li><a href="#announcements" class="nav-link" onclick="setActive(this)">Announcements</a></li>
+      <li><a href="#assignments" class="nav-link" onclick="setActive(this)">Assignments</a></li>
+      <li><a href="#resources" class="nav-link" onclick="setActive(this)">Resources</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="layout">
+
+      <div class="main-col">
+
+        <section id="course-info" class="card">
+          <h2 class="section-title">📘 Course Information</h2>
+          <table class="info-table">
+            <tr><td class="label">Course Name</td><td>Fundamentals of Web Development</td></tr>
+            <tr><td class="label">Course Code</td><td>WD202</td></tr>
+            <tr><td class="label">Instructor</td><td>Prof. Rahul Mehta</td></tr>
+            <tr><td class="label">Semester</td><td>Semester III — 2024–2025</td></tr>
+            <tr><td class="label">Credits</td><td>4 Credits</td></tr>
+            <tr><td class="label">Schedule</td><td>Mon, Wed, Fri — 10:00 AM to 11:00 AM</td></tr>
+          </table>
+        </section>
+
+        <section id="announcements" class="card">
+          <div class="section-header">
+            <h2 class="section-title">📢 Announcements</h2>
+            <button class="toggle-btn" onclick="toggleAnnouncements()">Hide</button>
+          </div>
+          <div id="announcements-body">
+            <div class="announcement">
+              <div class="ann-date">May 20, 2025</div>
+              <h4>Assignment 6 Submission Deadline Extended</h4>
+              <p>The deadline for Assignment 6 has been extended to May 30, 2025. Please submit all three files along with a screenshot.</p>
+            </div>
+            <div class="announcement">
+              <div class="ann-date">May 15, 2025</div>
+              <h4>Lab Session Rescheduled</h4>
+              <p>The lab session originally scheduled for May 17 has been moved to May 19, 2025. Attendance is mandatory.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="assignments" class="card">
+          <h2 class="section-title">📝 Assignments</h2>
+          <table class="assign-table">
+            <thead>
+              <tr><th>#</th><th>Assignment</th><th>Due Date</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Create a Basic HTML Page</td><td>Apr 10, 2025</td><td><span class="badge submitted">Submitted</span></td></tr>
+              <tr><td>2</td><td>Style a Page Using CSS</td><td>Apr 25, 2025</td><td><span class="badge submitted">Submitted</span></td></tr>
+              <tr><td>3</td><td>JavaScript Interactivity Exercise</td><td>May 5, 2025</td><td><span class="badge submitted">Submitted</span></td></tr>
+              <tr><td>4</td><td>Responsive Layout Design</td><td>May 15, 2025</td><td><span class="badge pending">Pending</span></td></tr>
+              <tr><td>5</td><td>Course Selection Portal</td><td>May 25, 2025</td><td><span class="badge pending">Pending</span></td></tr>
+              <tr><td>6</td><td>Moodle Course Page</td><td>May 30, 2025</td><td><span class="badge pending">Pending</span></td></tr>
+            </tbody>
+          </table>
+        </section>
+
+      </div>
+
+      <div class="side-col">
+
+        <section id="resources" class="card">
+          <h2 class="section-title">📚 Resources</h2>
+          <ul class="resource-list">
+            <li><a href="https://developer.mozilla.org" target="_blank">🌐 MDN Web Docs</a></li>
+            <li><a href="https://www.w3schools.com" target="_blank">🌐 W3Schools</a></li>
+            <li><a href="https://css-tricks.com" target="_blank">🎨 CSS Tricks</a></li>
+            <li><a href="https://javascript.info" target="_blank">⚡ JavaScript.info</a></li>
+            <li><a href="#" onclick="downloadAlert()">📄 Download Course Syllabus (PDF)</a></li>
+            <li><a href="#" onclick="downloadAlert()">📄 Download Lab Manual (PDF)</a></li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">📅 Upcoming</h2>
+          <ul class="upcoming-list">
+            <li><span class="date-tag">May 28</span> Mid-Sem Viva</li>
+            <li><span class="date-tag">May 30</span> Assignment 6 Due</li>
+            <li><span class="date-tag">Jun 5</span> Final Project Submission</li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 MoodleClone — Delhi Institute of Technology | Contact: support@dit.edu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
